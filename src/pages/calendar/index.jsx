@@ -2,6 +2,7 @@ import CalendarContainer from './CalendarContainer/CalendarContainer'
 import CalendarHeader from './CalendarHeader/CalendarHeader'
 import CalendarContent from './CalendarContent/CalendarContent'
 import CalendarFilter from './CalendarFilter/CalendarFilter'
+import CalendarSearch from './CalendarSearch/CalendarSearch'
 import CalendarFooter from './CalendarFooter/CalendarFooter'
 
 const Calendar = () => {
@@ -11,6 +12,7 @@ const Calendar = () => {
     <CalendarContainer>
       <CalendarHeader title={title}>
         <CalendarFilter />
+        <CalendarSearch />
       </CalendarHeader>
       <CalendarContent />
       <CalendarFooter />

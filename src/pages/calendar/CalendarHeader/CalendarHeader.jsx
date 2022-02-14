@@ -5,7 +5,9 @@ const CalendarHeader = ({ title, children }) => (
     <div>
       <h2 className="calendar-header_text">{title}</h2>
     </div>
-    {children}
+    <div>
+      {children}
+    </div>
   </div>
 )
 

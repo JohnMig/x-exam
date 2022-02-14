@@ -4,6 +4,7 @@ import {
   UPDATE_CALENDAR,
   DELETE_CALENDAR,
   FILTER_CALENDAR,
+  SEARCH_CALENDAR,
   STORE_CALENDAR
 } from '../types'
 
@@ -43,6 +44,17 @@ export const calendar = (state = initialState, action) => {
           status?.toUpperCase() === payload
         ))
       }
+    case SEARCH_CALENDAR:
+      const storedData = state.data
+      const items = storedData.filter((d) => d.title.includes(payload.toUpperCase()))
+
+      if (items.length)
+        return {
+          data: storedData,
+          filtered: items
+        }
+
+      return state
     default:
       return state
   }
