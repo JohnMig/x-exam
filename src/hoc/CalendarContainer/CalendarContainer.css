@@ -1,0 +1,9 @@
+.calendar-shared-container {
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #ddd;
+  height: 18rem;
+  margin: 2rem auto;
+  max-width: 27rem;
+  padding: 1.5rem;
+  position: relative;
+}

@@ -1,0 +1,23 @@
+.calendar-shared-content {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.calendar-shared-content > * {
+  margin-top: 0.5rem;
+}
+
+.calendar-shared-content > * label {
+  color: #333;
+}
+
+.calendar-shared-content > * label:last-child {
+  margin-left: 1.25rem;
+}
+
+.calendar-shared-content > * input {
+  border-bottom: 1px solid #999 !important;
+  margin-left: 0.3rem;
+  max-width: 15rem;
+  width: 100%;
+}

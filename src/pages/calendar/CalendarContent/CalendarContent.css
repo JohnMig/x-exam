@@ -1,0 +1,50 @@
+.calendar-content {
+  border: 1px solid #ddd;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.calendar-content_delete {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.375rem;
+  cursor: pointer;
+}
+
+.calendar-content_title {
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.calendar-content_status {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-content_status-text {
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 4.7rem;
+}
+
+.calendar-content_status-text.done {
+  background-color: #489f48;
+}
+
+.calendar-content_status-text.pending {
+  background-color: #dd9f2d;
+}
+
+.calendar-content_status-text.on-going {
+  background-color: #7474D4;
+}
+
+.calendar-content_status-date {
+  font-weight: bold;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,11 @@
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 400px) {
+  .calendar-header_text {
+    font-size: 1.2rem;
+  }
+}

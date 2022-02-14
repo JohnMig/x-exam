@@ -1,0 +1,16 @@
+{
+  "calendar": [
+    {
+      "id": 1,
+      "title": "CONFERENCE MEETING",
+      "date": "January 01, 2020",
+      "status": "DONE"
+    },
+    {
+      "id": 2,
+      "title": "VICTORY PARTY",
+      "date": "January 02, 2020",
+      "status": "PENDING"
+    }
+  ]
+}

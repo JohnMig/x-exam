@@ -1,0 +1,17 @@
+.calendar-shared-header {
+  display: flex;
+  font-size: 1rem;
+}
+
+.calendar-shared-header h4 {
+  padding-left: 1rem;
+}
+
+.calendar-shared-header > *:first-child {
+  text-decoration:  underline;
+}
+
+.calendar-shared-header > *:last-child {
+  flex: 1;
+  text-align: center;
+}

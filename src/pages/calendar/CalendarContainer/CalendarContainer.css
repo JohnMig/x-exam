@@ -1,0 +1,7 @@
+.calendar-container {
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #ddd;
+  margin: 2rem auto;
+  max-width: 40rem;
+  padding: 1.5rem;
+}
