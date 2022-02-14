@@ -1,4 +1,10 @@
-import { CALENDAR_OPTIONS } from '../../utils/constant'
+import LabelContainer from '../../hoc/LabelContainer/LabelContainer'
+
+import Label from '../../shared/Label/Label'
+import Input from '../../shared/Input/Input'
+import DataList from '../../shared/DataList/DataList'
+import InputList from '../../shared/InputList/InputList'
+
 import './CalendarContent.css'
 
 const CalendarContent = ({ item, onChangeValue }) => {
@@ -6,45 +12,22 @@ const CalendarContent = ({ item, onChangeValue }) => {
 
   return (
     <div className="calendar-shared-content">
-      <div>
-        <label>
-          TITLE: 
-          <input 
-            type="text"
-            value={title}
-            name="title"
-            placeholder="TITLE"
-            onChange={(e) => onChangeValue(e.target.name, e.target.value)}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          DATE: 
-          <input 
-            type="text" 
-            value={date} 
-            name="date" 
-            placeholder="DATE"
-            onChange={(e) => onChangeValue(e.target.name, e.target.value)}
-          />
-        </label>
-      </div>
-      <div>
-        <label>
-          STATUS: 
-          <input 
-            list="status" 
-            value={status} 
-            name="status" 
-            placeholder="STATUS"
-            onChange={(e) => onChangeValue(e.target.name, e.target.value)}
-          />
-        </label>
-        <datalist id="status">
-          {CALENDAR_OPTIONS.map((opt) => <option key={opt} value={opt} />)}
-        </datalist>
-      </div>
+      <LabelContainer>
+        <Label title="TITLE">
+          <Input value={title} name="title" placeholder="TITLE" handleChangeValue={onChangeValue} />
+        </Label>
+      </LabelContainer>
+      <LabelContainer>
+        <Label title="DATE">
+          <Input value={date} name="date" placeholder="DATE" handleChangeValue={onChangeValue} />
+        </Label>
+      </LabelContainer>
+      <LabelContainer>
+        <Label title="STATUS">
+          <InputList list="status" value={status} name="status" placeholder="STATUS" handleChangeValue={onChangeValue} />
+        </Label>
+        <DataList id="status" />
+      </LabelContainer>
     </div>
   )
 }

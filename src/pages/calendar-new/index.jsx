@@ -25,7 +25,8 @@ const CalendarNew = ({ dispatch }) => {
     status: 'PENDING'
   })
 
-  const handleChangeValue = (name, value) => {
+  const handleChangeValue = (evt) => {
+    const { name, value } = evt.target
     const newItem = { ...item }
     newItem[name] = value
     setItem(newItem)

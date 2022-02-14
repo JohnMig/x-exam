@@ -39,7 +39,8 @@ const CalendarStatus = ({ dispatch }) => {
     })()
   }, [])
 
-  const handleChangeValue = (name, value) => {
+  const handleChangeValue = (evt) => {
+    const { name, value } = evt.target
     const newItem = { ...item }
     newItem[name] = name === 'title' ? value.toUpperCase() : value
     setItem(newItem)
