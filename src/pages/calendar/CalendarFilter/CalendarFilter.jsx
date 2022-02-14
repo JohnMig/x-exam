@@ -22,7 +22,7 @@ const CalendarFilter = ({ dispatch }) => {
   return (
     <div>
       <Label title="FILTER">
-        <InputList list="status" value={value}  handleChangeValue={onChangeValue} />
+        <InputList list="status" value={value}  handleChangeValue={onChangeValue} className="calendar-filter" />
       </Label>
       <DataList id="status" />
     </div>

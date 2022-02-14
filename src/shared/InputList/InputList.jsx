@@ -1,3 +1,5 @@
+import './InputList.css'
+
 const InputList = ({ list, value, name, placeholder, handleChangeValue, className }) => (
   <input 
     list={list}
