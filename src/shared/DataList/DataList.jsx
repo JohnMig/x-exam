@@ -1,9 +1,7 @@
-import { CALENDAR_OPTIONS } from '../../utils/constant'
-
-const DataList = ({ id }) => {
+const DataList = ({ id, options }) => {
   return (
     <datalist id={id}>
-      {CALENDAR_OPTIONS.map((opt) => <option key={opt} value={opt} />)}
+      {options.map((opt) => <option key={opt} value={opt} />)}
     </datalist>
   )
 }

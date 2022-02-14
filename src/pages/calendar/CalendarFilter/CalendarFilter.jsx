@@ -8,6 +8,8 @@ import DataList from '../../../shared/DataList/DataList'
 import { filterCalendar } from '../../../store/calendar/calendar.action'
 import { FILTER_CALENDAR } from '../../../store/types'
 
+import { CALENDAR_OPTIONS } from '../../../utils/constant'
+
 import './CalendarFilter.css'
 
 const CalendarFilter = ({ dispatch }) => {
@@ -24,7 +26,7 @@ const CalendarFilter = ({ dispatch }) => {
       <Label title="FILTER">
         <InputList list="status" value={value}  handleChangeValue={onChangeValue} className="calendar-filter" />
       </Label>
-      <DataList id="status" />
+      <DataList id="status" options={CALENDAR_OPTIONS} />
     </div>
   )
 }

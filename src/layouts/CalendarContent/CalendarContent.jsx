@@ -5,6 +5,8 @@ import Input from '../../shared/Input/Input'
 import DataList from '../../shared/DataList/DataList'
 import InputList from '../../shared/InputList/InputList'
 
+import { CALENDAR_OPTIONS } from '../../utils/constant'
+
 import './CalendarContent.css'
 
 const CalendarContent = ({ item, onChangeValue }) => {
@@ -26,7 +28,7 @@ const CalendarContent = ({ item, onChangeValue }) => {
         <Label title="STATUS">
           <InputList list="status" value={status} name="status" placeholder="STATUS" handleChangeValue={onChangeValue} />
         </Label>
-        <DataList id="status" />
+        <DataList id="status" options={CALENDAR_OPTIONS} />
       </LabelContainer>
     </div>
   )
